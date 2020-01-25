@@ -13,6 +13,7 @@ Vehicle.prototype.stop = () => {
   return 'Stopping';
 };
 
+
 // Car Constructor
 const Car = function(name) {
   Vehicle.call(this, name, 4);
@@ -24,6 +25,8 @@ const Motorcycle = function(name) {
   Vehicle.call(this,name,2);
 };
 
+
+
 Motorcycle.prototype = new Vehicle();
 
 Motorcycle.prototype.wheelie = () => {
@@ -31,3 +34,4 @@ Motorcycle.prototype.wheelie = () => {
 };
 
 module.exports = {Car, Motorcycle};
+

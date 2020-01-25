@@ -76,3 +76,43 @@ describe('Vehicles', () => {
   });
 
 });
+
+
+let vehicleClass = require('../vehicle-class');
+
+describe('check Vechile class',()=>{
+  describe('check Car class',()=>{
+    let ford = new vehicleClass.Car('ford');
+    it('check if the object have same name',()=>{
+      expect(ford.name).toEqual('ford')
+    })
+    it('check if the car can drive',()=>{
+      expect(ford.drive()).toEqual('Moving Forward')
+    })
+    it('check if the car can stop',()=>{
+      expect(ford.stop()).toEqual('Stopping')
+    })
+    it('number of wheel',()=>{
+      expect(ford.wheels).toEqual(4)
+    })
+  })
+  describe('check Motorcycle class',()=>{
+    let honda = new vehicleClass.Motorcycle('honda')
+    it('check if it has same name',()=>{
+      expect(honda.name).toEqual('honda')
+    })
+    it('check if motor can drive',()=>{
+      expect(honda.drive()).toEqual('Moving Forward')
+    })
+    it('check if motor can stop',()=>{
+      expect(honda.stop()).toEqual('Stopping')
+    })
+    it('check if motor can whieelie',()=>{
+      expect(honda.wheelie()).toEqual('Wheee!')
+    })
+    it('number of wheel',()=>{
+      expect(honda.wheels).toEqual(2)
+    })
+  })
+})
+
