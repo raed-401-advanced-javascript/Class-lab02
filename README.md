@@ -7,7 +7,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/raed-401-advanced-javascript/Class-lab02/pull/1)
-- [ci/cd]() (GitHub Actions)
+- [ci/cd](https://github.com/raed-401-advanced-javascript/Class-lab02/pull/1/checks?check_run_id=408745081) (GitHub Actions)
 
 ### Setup
 
