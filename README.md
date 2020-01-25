@@ -1,4 +1,4 @@
-# code challange 3
+# Class 2
 
 ## lab - 2 
 
